@@ -1,0 +1,4 @@
+<?php
+$img_url = "https://www.dropbox.com/s/8ge0ldbzxlej0mv/222.png?dl=0";
+$outputText = new LINE\LINEBot\MessageBuilder\ImageMessageBuilder($img_url, $img_url);
+$response = $bot->replyMessage($event->getReplyToken(), $outputText);
